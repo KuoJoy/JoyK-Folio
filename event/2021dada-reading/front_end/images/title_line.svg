@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69" height="66" viewBox="0 0 69 66">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.242" y1="1" x2="-0.183" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#18b9e5"/>
+      <stop offset="1" stop-color="#4a46f3"/>
+    </linearGradient>
+    <filter id="Rectangle_1390" x="0" y="14" width="63" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#1d0b47" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_1391" x="0" y="28" width="69" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-color="#1d0b47" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_1392" x="0" y="0" width="69" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-color="#1d0b47" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2265" data-name="Group 2265" transform="translate(-1220 -2291)">
+    <g transform="matrix(1, 0, 0, 1, 1220, 2291)" filter="url(#Rectangle_1390)">
+      <path id="Rectangle_1390-2" data-name="Rectangle 1390" d="M0,0H29a4,4,0,0,1,4,4V4a4,4,0,0,1-4,4H0A0,0,0,0,1,0,8V0A0,0,0,0,1,0,0Z" transform="translate(15 24)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1220, 2291)" filter="url(#Rectangle_1391)">
+      <path id="Rectangle_1391-2" data-name="Rectangle 1391" d="M0,0H35a4,4,0,0,1,4,4V4a4,4,0,0,1-4,4H0A0,0,0,0,1,0,8V0A0,0,0,0,1,0,0Z" transform="translate(15 38)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1220, 2291)" filter="url(#Rectangle_1392)">
+      <path id="Rectangle_1392-2" data-name="Rectangle 1392" d="M0,0H35a4,4,0,0,1,4,4V4a4,4,0,0,1-4,4H0A0,0,0,0,1,0,8V0A0,0,0,0,1,0,0Z" transform="translate(15 10)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="133.852" height="161.979" viewBox="0 0 133.852 161.979">
+  <g id="Group_2050" data-name="Group 2050" transform="translate(-964 -13565.435)">
+    <g id="Group_2037" data-name="Group 2037" transform="translate(996.124 13565.435)">
+      <g id="Group_1970" data-name="Group 1970" transform="translate(4.433 6.558)">
+        <path id="Path_5722" data-name="Path 5722" d="M548.285,234.623a161.07,161.07,0,0,0-14.453-15.738,160.889,160.889,0,0,0-14.441,15.74,158.715,158.715,0,0,0-15.961-12.23l4.952,28.381h50.934l4.954-28.384A158.587,158.587,0,0,0,548.285,234.623Z" transform="translate(-503.429 -218.885)" fill="#101126"/>
+      </g>
+      <g id="Group_1971" data-name="Group 1971" transform="translate(0 0)">
+        <circle id="Ellipse_164" data-name="Ellipse 164" cx="3.862" cy="3.862" r="3.862" transform="translate(0 4.119)" fill="#101126"/>
+        <circle id="Ellipse_165" data-name="Ellipse 165" cx="3.862" cy="3.862" r="3.862" transform="translate(61.98 4.119)" fill="#101126"/>
+        <path id="Path_5723" data-name="Path 5723" d="M524.127,219.577a3.862,3.862,0,1,1-3.862-3.862A3.862,3.862,0,0,1,524.127,219.577Z" transform="translate(-485.132 -215.715)" fill="#101126"/>
+      </g>
+    </g>
+    <g id="Ellipse_174" data-name="Ellipse 174" transform="translate(964 13593.563)" fill="#283550" stroke="#101126" stroke-width="5">
+      <circle cx="66.926" cy="66.926" r="66.926" stroke="none"/>
+      <circle cx="66.926" cy="66.926" r="64.426" fill="none"/>
+    </g>
+    <g id="Document-files-8" transform="translate(1004.003 13627.472)">
+      <path id="Path_650" data-name="Path 650" d="M180.48,88.186V32H136v2.341h40.969a1.171,1.171,0,0,1,1.171,1.171V88.186Z" transform="translate(-126.636 -32)" fill="#fff"/>
+      <path id="Path_651" data-name="Path 651" d="M148.48,120.186V64H104v2.341h29.263a1.209,1.209,0,0,1,.831.339L145.8,78.386a1.209,1.209,0,0,1,.339.831v40.969Z" transform="translate(-99.318 -59.318)" fill="#fff"/>
+      <path id="Path_652" data-name="Path 652" d="M319.714,114.994,312,107.28v6.543a1.171,1.171,0,0,0,1.171,1.171Z" transform="translate(-276.884 -96.265)" fill="#fff"/>
+      <path id="Path_653" data-name="Path 653" d="M72,96v56.186h44.48v-44.48h-8.194a3.522,3.522,0,0,1-3.512-3.512V96Zm16.387,10.535h11.705v2.341H88.387ZM111.8,129.945H97.752V127.6H111.8Zm0-7.023H76.682v-2.341H111.8Zm0-9.364V115.9H76.682v-2.341Z" transform="translate(-72 -86.636)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot?t=20180611v1');
+  src:  url('../../fonts/icomoon.eot?t=20180611v1') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?t=20180611v1') format('truetype'),
+    url('../../fonts/icomoon.woff?t=20180611v1') format('woff'),
+    url('../../fonts/icomoon.svg?t=20180611v1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="Icon"], [class*=" Icon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.IconAdd:before {
+  content: "\e903";
+}
+.IconBullhorn1:before {
+  content: "\e904";
+}
+.IconEmail:before {
+  content: "\e905";
+}
+.IconEpisode:before {
+  content: "\e906";
+}
+.IconFilm:before {
+  content: "\e907";
+}
+.IconInfinity:before {
+  content: "\e908";
+}
+.IconLive:before {
+  content: "\e909";
+}
+.IconLiveCalendar:before {
+  content: "\e90a";
+}
+.IconNotice:before {
+  content: "\e90b";
+}
+.IconPay:before {
+  content: "\e90c";
+}
+.IconProcess:before {
+  content: "\e90d";
+}
+.IconTrophy:before {
+  content: "\e90e";
+}
+.IconWarning:before {
+  content: "\e90f";
+}
+.IconArror:before {
+  content: "\e910";
+}
+.IconCheck:before {
+  content: "\e902";
+}
+.IconShare:before {
+  content: "\e901";
+}
+.IconQa:before {
+  content: "\e900";
+}

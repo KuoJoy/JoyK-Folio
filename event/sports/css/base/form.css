@@ -1,0 +1,795 @@
+/*input start*/
+/*單行輸入欄位(文字、密碼)、下拉選單、多行輸入欄位(留言)*/
+.form__control{
+	font-family: helvetica,"蘋果儷中黑","微軟正黑體",verdana,arial,sans-serif,"新細明體";
+	font-size: 16px;
+	line-height: 1.15;
+	width: 100%;
+	/*color: #333;*/
+	padding: 10px;
+	min-height: 40px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+/*select設定*/
+select.form__control{
+	padding: 10px;
+	background: #fff url("../../images/icon/bg_select.svg?t=20160701") right center no-repeat;
+}
+.form__optgroup{
+	background: #eee;
+}
+/*多個為一個from_field的*/
+.form__controls{
+	margin-bottom: 18px;
+}
+
+/*跟在後的comment*/
+.form__controls + .form__comment{
+	margin-top: -10px;
+}
+/*跟在後的feedback*/
+.form__controls + .form__feedback{
+	margin-top: -10px;
+}
+/*控制項-focus*/
+.form__control:focus {
+	border-color: #333;/*可改為主色*/
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.form__control[disabled],
+.form__control[readonly],
+fieldset[disabled] .form__control {
+	cursor: not-allowed;
+	/* filter: alpha(opacity=65); */
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	/* opacity: .65; */
+	background: #eee;
+	border-color: #ccc;
+	color: #888;
+}
+textarea.form__control {
+	height: auto;
+}
+/*預設radio、checkbox*/
+/*input - 多擇一選項*/
+input[type=radio] {
+	vertical-align: top;
+}
+/*input - checkbox核取方塊*/
+input[type=checkbox] {
+ 	vertical-align: middle;
+}
+/*行內radio、checkbox*/
+.list-option {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*radio、checkbox*/
+.list-option__item{
+	list-style: none;
+	text-align: left;
+}
+/* 兩等份 */
+.list-option--2,
+.list-option--3{
+	margin: 0 -5px;
+}
+.list-option--2 .list-option__item{
+	width: calc(50% - 10px);
+	margin: 0 5px;
+	float: left;
+}
+.list-option--3 .list-option__item{
+	width: calc(33.3333% - 10px);
+	margin: 0 5px;
+	float: left;
+}
+.list-option--2 .list-option__item-other {
+	width: calc(100% - 10px);
+}
+
+/* 圖片單選 */
+.list-option-img{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0;
+	list-style: none;
+	/* min-height: 60px; */
+	margin: 0 -3px;
+}
+/* 圖片單選-項目 */
+.list-option-img__item{
+	padding: 0;
+	/* display: inline-block; */
+	margin: 3px;
+	width: calc(25% - 6px);
+	max-width: 84px;
+	/* height: 54px; */
+}
+/* 圖片單選-單選 */
+.list-option-img__radio{
+}
+/* 圖片單選-欄位 */
+.list-option-img__label{
+	cursor: pointer;
+	display: block;
+	position: relative;
+	vertical-align: top;
+	overflow: hidden;
+	margin-bottom: 0;
+	/* -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%; */
+	border: 1px solid #fff;
+	padding: 3px;
+	/* width: 40px;
+	height: 40px; */
+	overflow: hidden;
+	/* padding: 0; */
+}
+.list-option-img__label:before{
+	content: "";
+	width: 36px;
+	height: 36px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	display: none;
+	/* padding-top: 100%; */
+	position: absolute;
+	z-index: 2;
+	border: 2px solid #fff;
+}
+/* 圖片單選-已勾選*/
+.list-option-img__radio:checked + .list-option-img__label{
+	border-color: #333;
+}
+/* --------------------尺寸-------------------- */
+.list-option-img--sm{
+	margin: 0 -5px;
+}
+/* 圖片單選-項目 */
+.list-option-img--sm .list-option-img__item{
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+}
+/* 圖片單選-欄位 */
+.list-option-img--sm .list-option-img__label{
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+}
+/* 格子單選 */
+.list-option-squre{
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	letter-spacing: -4px;
+	word-spacing: 0;
+	margin: 0;
+}
+/* 格子單選-項目 */
+.list-option-squre__item{
+	font-size: 14px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	zoom: 1;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 -1px -1px 0;
+	width: calc(100% / 3);
+}
+/* 格子單選-單選 */
+.list-option-squre__radio{
+}
+/* 格子單選-欄位 */
+.list-option-squre__label{
+	cursor: pointer;
+	display: block;
+	position: relative;
+	vertical-align: top;
+	overflow: hidden;
+	margin-bottom: 0;
+	border: 1px solid #ccc;
+	padding: 10px 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+/* 格子單選-實心圓、-勾選*/
+.list-option-squre__label:after {
+}
+/* 圖片單選-已勾選*/
+.list-option-squre__radio:checked + .list-option-squre__label{
+	border-color: #333;
+	z-index: 2;
+	color: #333;
+}
+/* 圖片單選複選-圖片*/
+.list-option-img__img{
+	pointer-events: none;
+	/* -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%; */
+}
+/* 仿預設radio、checkbox*/
+.radiobox,
+.checkbox {
+	display: none;
+	position: absolute;
+}
+/* radio、checkbox-label*/
+.radiobox__label,
+.checkbox__label {
+	cursor: pointer;
+	display: block;
+	position: relative;
+	vertical-align: middle;
+	padding: 10px 0 6px 35px;
+	/* margin: 0.5em 0; */
+	line-height: 1.5;/*建議不要變*/
+	font-weight: normal;
+	max-width: initial;
+	color: #555555;
+}
+/* radio、checkbox-外框*/
+.radiobox__label:before,
+.checkbox__label:before {
+	content: "";
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	position: absolute;
+	top: 9px;
+	left: 0px;
+	border:4px solid #888888;
+	animation-duration: 0.4s;
+}
+/*單選外框-圓*/
+.radiobox__label:before {
+	border-radius: 50%;
+}
+/*多選-方*/
+.checkbox__label:before {
+}
+/* 單選-實心圓、複選-勾選*/
+.radiobox__label:after,
+.checkbox__label:after {
+	content: '';
+	position: absolute;
+	display: none;
+}
+/*單選-實心圓*/
+.radiobox__label:after {
+	background: #888888;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	top: 16px;
+	left: 7px;
+}
+/*複選-勾*/
+.checkbox__label:after {
+	width: 8px;
+	height: 12px;
+	transform: rotate(45deg);
+	border-width: 3px;
+	border-style: solid;
+	border-color: #191919;
+	border-top: 0;
+	border-left: 0;
+	top: 9px;
+	left: 4px;
+}
+/*選項-checked*/
+.radiobox:checked + .radiobox__label:after,
+.checkbox:checked + .checkbox__label:after {
+	display: block;
+}
+/*disabled-input本身*/
+.radiobox[disabled],
+.checkbox[disabled] {
+	cursor: not-allowed;
+}
+/*disabled-文字*/
+.radiobox[disabled] + .radiobox__label,
+.checkbox[disabled] + .checkbox__label {
+	color: #ccc;
+	cursor: not-allowed;
+}
+/*disabled-出現禁止符號*/
+.radiobox[disabled] + .radiobox__label:before,
+.radiobox[disabled] + .radiobox__label:after
+.checkbox[disabled] + .checkbox__label:before,
+.checkbox[disabled] + .checkbox__label:after {
+	cursor: not-allowed;
+}
+/*disabled-圓底框、方底框*/
+.radiobox[disabled] + .radiobox__label:before,
+.checkbox[disabled] + .checkbox__label:before {
+	border-color: #ccc;
+}
+/*disabled-實心圓*/
+.radiobox:checked[disabled] + .radiobox__label:after {
+	background: #ccc;
+}
+/*disabled-打勾*/
+.checkbox:checked[disabled] + .checkbox__label:after {
+	border-color: #ccc;
+}
+/* 其他 */
+.checkbox__label-other {
+	display: inline-block;
+	margin-right: 5px;
+}
+.form__control-other {
+	display: inline-block;
+	width: auto;
+}
+/*表單*/
+.form{
+	width: 100%;
+	position: relative;
+}
+/*標題*/
+.form__legend{
+	display: none;
+}
+/*表單身體*/
+.form__body{
+}
+/*引言短句*/
+.form__intro{
+	font-size: 1.125em;/*18/16*/
+	margin: 0 0 1em;/*20/20*/
+}
+/*橫列*/
+.form__field{
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.form__field:last-child{
+	margin-bottom: 0;
+}
+/*清除field浮動*/
+.form__field::after{
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+/* 勾選欄位-記住條款、記住密碼 */
+.form__field-keepcheckbox{
+	margin-bottom: 5px;
+}
+/*欄位名*/
+.form__label{
+	text-align: left;
+	font-weight: normal;
+	margin-bottom: 3px;
+	color: #888;
+}
+/*欄位名-隱藏*/
+.form__label--hide {
+	display: none;
+}
+/*填寫內容*/
+.form__inputgroup{
+}
+.form__inputgroup.loading:after {
+	margin: -0.7em 0em 0em -0.7em;
+	width: 1.4em;
+	height: 1.4em;
+}
+/*field-網格橫列*/
+.form .row{
+	overflow: hidden;/*超出隱藏*/
+}
+/*field-網格直欄*/
+.form [class*=col-],
+.form__field [class*=col-]{
+}
+/*註解訊息*/
+.form__comment {
+	color: #888;
+	font-size: 0.875em;/*14/16*/
+	margin: 5px 0 10px;
+	line-height: 1.64;
+}
+/*餵出-靜態文字*/
+.form__feedstatic {
+	min-height: 38px;
+	padding: 10px 0;
+	line-height: 1.4;
+}
+/*展開欄位-隱藏---------------*/
+.form__expend{
+	overflow: hidden;
+	-webkit-transition: max-height .35s;
+	-moz-transition: max-height .35s;
+	transition: max-height .35s;
+	max-height: 0;
+	/* opacity: 0; */
+	/* display: none; */
+	margin-bottom: 0;
+}
+/*展開欄位-開啟*/
+.form__expend--open{
+	max-height: 2000px;
+	/* opacity: 1; */
+	/* display: block; */
+	margin-bottom: 20px;
+
+}
+/*必填*/
+.form__field-required{
+}
+/*必填-前綴*/
+.form__field-required > .form__label:before {
+	content: "* ";
+	display: inline-block;
+	color: #ec0000;
+	margin-right: 4px;
+}
+.form__field-required .form__inputgroup{
+	position: relative;
+}
+/*回饋訊息*/
+.form__feedback {
+	display: none;
+	font-size: 14px;/*14/16*/
+	margin: 7px 0 10px;
+}
+.form__feedback i{
+	font-size: 20px;
+	margin-top: -4px;
+}
+/*回饋提示-上有欄位說明*/
+.form__comment + .form__feedback{
+	margin: -5px 0 0;
+}
+/* input 驗證icon */
+.input-verify-icon{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	display: none;
+	-webkit-transform: scale3d(0, 0, 0);
+	transform: scale3d(0, 0, 0);
+}
+/* 失敗 */
+.form__field--error .input-verify-icon{
+	color: #ec0000;
+	/* display: block; */
+}
+/* 成功 */
+.form__field--success .input-verify-icon{
+	color: #499400;
+	display: block;
+}
+/*訊息-錯誤*/
+.form__field--error .form__feedback{
+	color: #ec0000;
+	display: block;
+}
+.form__field--error .form__feedback > a {
+	color: #ec0000;
+}
+/*訊息-成功*/
+.form__field--success .form__feedback {
+	color: #499400;
+	display: block;
+}
+.form__field--error .form__control{
+	border-color: #ec0000;
+}
+/*回饋訊息-icon*/
+.form__feedback-icon {
+}
+/* 驗證icon-input 右*/
+.form__field-required .form__feedback-icon{
+	/* position: absolute; */
+	/* right: 5px; */
+	/* top: 10px; */
+}
+/* 驗證icon-input */
+.form__field--success .form__feedback-icon{
+	color: #499400;
+}
+/* 驗證icon-input */
+.form__field--error .form__feedback-icon{
+	color: #ec0000;
+}
+/*checkbox-記住設定*/
+.form__keep{
+}
+/*checkbox-label*/
+.form__keep-label {
+	font-size: 0.875em;/*14/16*/
+	margin: 0;
+}
+/*checkbox-外框*/
+.form__keep-label:before{
+	/* top: 8px; */
+}
+/*checkbox-打勾*/
+.form__keep-label:after{
+	/* top: 8px; */
+}
+/* 兩欄 */
+.form__keeps{
+	overflow: hidden;
+}
+/* 記住-左 */
+.form__keep-left{
+	float: left;
+}
+/* 記住-右 */
+.form__keep-right{
+	float: right;
+	padding: 8px 0;
+	font-size: 14px;
+}
+.form__keep-link{
+}
+/*checkbox-附帶（記住密碼、和該input相聯）*/
+.form__comment + .form__keep {
+	margin-top: -8px;
+}
+
+/*checkbox-附帶（記住密碼、和該input相聯）*/
+.form__keep + .form__feedback {
+	margin-top: -8px;
+}
+/*input、select後緊接著按鈕*/
+.form__btn-edit,
+.form__control + .form__btn-edit{
+	margin: 10px 0 0 0;
+}
+/* 驗證區 */
+.from_field-verify{
+
+}
+/* 驗證區 */
+.from_field-verify img{
+	width: auto;
+	max-width: auto;
+}
+.list-report{
+	padding: 0;
+	list-style: none;
+	/* margin-bottom: 1.25em; */
+}
+.list-report__item,
+.list-report__desc{
+	margin-bottom: 10px;
+	color: #333;
+}
+.list-report__item:last-child{
+	margin-bottom: 0;
+}
+.list-report__title,
+.list-report__data{
+	display: block;
+}
+.list-report__title{
+	float: left;
+	width: 90px;
+	text-align: right;
+}
+.list-report__data{
+	padding-left: 95px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+/* 整欄 */
+.list-report__item--all{
+}
+/* 整欄-標題 */
+.list-report__item--all .list-report__title{
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+/* 整欄-參數 */
+.list-report__item--all .list-report__data{
+	padding-left: 0;
+}
+/* 生日 */
+.form__field-birth{
+
+}
+/* 生日-年月日 */
+.form__field-birth .form__control-year,
+.form__field-birth .form__control-month,
+.form__field-birth .form__control-day{
+	display: block;
+}
+/* 地址 */
+.form__field-address{
+
+}
+/* 地址-各欄 */
+.form__control-city,
+.form__control-town,
+.form__control-zip,
+.form__control-address{
+	display: block;
+}
+/*上傳檔案*/
+.form-upload__btn{
+
+}
+/* input */
+.form-upload__control{
+	position: fixed;
+	right: 100%;
+	bottom: 100%;
+}
+/* 預覽區 */
+.form-upload__preview{
+	background: #fff;
+	border:1px dashed #ccc;
+	text-align: center;
+	margin: 10px 0 0;
+	overflow: hidden;
+	position: relative;
+}
+.form-upload__preview:after {
+	padding-top: 75%;
+	content:"";
+	display: block;
+}
+.form-upload__preview-img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+	transform: translate(-50%, -50%);
+}
+@media (min-width: 768px){
+	.list-option{
+		text-align: left;
+	}
+	/* 兩等份 */
+	.list-option--2,
+	.list-option--3{
+		margin: 0;
+	}
+	/*表單*/
+	.list-option__item,
+	.list-option--2 .list-option__item,
+	.list-option--3 .list-option__item{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 10px 0 0;
+		width: auto;
+		float: none;
+	}
+	.list-option__item:last-child,
+	.list-option--2 .list-option__item:last-child{
+		margin-right: 0;
+	}
+	.radiobox__label,
+	.checkbox__label{
+	}
+	.list-report__title,
+	.list-report__data{
+		display: inline;
+	}
+	.list-report__title{
+		float: none;
+		width: auto;
+		text-align: left;
+	}
+	.list-report__data{
+		padding-left: 0;
+	}
+	/*網格 */
+	.form__field-birth .form__control-row,
+	.form__field-address .form__control-row{
+		margin: 0 -5px;
+		overflow: hidden;
+	}
+	/* 生日-年月日 */
+	.form__field-birth .form__control-year,
+	.form__field-birth .form__control-month,
+	.form__field-birth .form__control-day{
+		float: left;
+		margin: 0 5px;
+		width: calc(33.33333333% - 10px);
+	}
+	/* 地址-各欄 */
+	.form__control-city,
+	.form__control-town,
+	.form__control-zip{
+		float: left;
+		margin: 0 5px;
+	}
+	/* 地址-城、市 */
+	.form__control-city,
+	.form__control-town{
+		width: calc(40% - 10px);
+	}
+	/* 地址-郵區 */
+	.form__control-zip{
+		width: calc(20% - 10px);
+	}
+	.form__control-zip:after{
+		clear: both;
+		content: " ";
+		display: block;
+		height: 0;
+		line-height: 0;
+	}
+	/* 地址-詳細地址 */
+	.form__control-address{
+		clear: both;
+	}
+	.radiobox__label,
+.checkbox__label {
+	padding: 8px 0 6px 25px;
+	font-size:1.1em;
+
+}
+@media (min-width: 1024px){
+	/*左右欄設計*/
+	.form--horizontal .form__label{
+		padding: 11px 10px;
+		margin-bottom: 0;
+		text-align: right;
+		float: left;
+		min-height: 1px;
+		width: 120px;
+	}
+	/*欄位名-隱藏*/
+	.form--horizontal .form__label--hide {
+		display: none;
+	}
+	/*右側欄位*/
+	.form--horizontal .form__inputgroup{
+		padding: 0 0 0 120px;
+	}
+	/*radio、checkbox的label*/
+	.form--horizontal .form__field-radio .form__label{
+		padding-top: 9px;/*對齊用*/
+	}
+	.list-option-img{
+		/* margin: 0 -4px; */
+	}
+	/* 圖片單選複選-項目 */
+	.list-option-img__item{
+		width: calc(100% / 8 - 6px);
+		max-width: 52px;
+		/* height: 40px; */
+	}
+	/*表單*/
+	.list-option__item,
+	.list-option--2 .list-option__item{
+		margin-right: 30px;
+	}
+	.list-option__item:last-child,
+	.list-option--2 .list-option__item:last-child{
+		margin-right: 0;
+	}
+	.radiobox__label,
+.checkbox__label {
+	padding: 8px 0 6px 25px;
+	font-size:1.2em;
+}
+}

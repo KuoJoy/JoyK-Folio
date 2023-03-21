@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350.829" height="624.618" viewBox="0 0 350.829 624.618">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#16146a"/>
+      <stop offset="1" stop-color="#29268e"/>
+    </linearGradient>
+    <filter id="Rectangle_3879" x="33.308" y="86.459" width="317.521" height="538.159" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#ff1c33" flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Union_15" x="22.5" y="75.538" width="321.142" height="541.159" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#ff1c33" flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_19302" x="286.1" y="75.538" width="41.607" height="50.88" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-color="#ff1c33" flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_2" x="0" y="0" width="101" height="173" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-color="#ff1c33" flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2966" data-name="Group 2966" transform="translate(-1.5 -1198.462)">
+    <g transform="matrix(1, 0, 0, 1, 1.5, 1198.46)" filter="url(#Rectangle_3879)">
+      <rect id="Rectangle_3879-2" data-name="Rectangle 3879" width="299.521" height="520.159" rx="10" transform="translate(42.31 95.46)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1.5, 1198.46)" filter="url(#Union_15)">
+      <path id="Union_15-2" data-name="Union 15" d="M150.405,520.159H10a10,10,0,0,1-10-10V10A10,10,0,0,1,10,0H130.406A20.005,20.005,0,0,1,150.07,16.336,20.005,20.005,0,0,1,169.736,0H290.141a10,10,0,0,1,10,10V510.16a10,10,0,0,1-10,10Z" transform="translate(33 86.04)" fill="none" stroke="#ffe9ec" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1.5, 1198.46)" filter="url(#Path_19302)">
+      <path id="Path_19302-2" data-name="Path 19302" d="M0,0H20.607V29.88L10.456,22.8,0,29.88Z" transform="translate(296.6 86.04)" fill="none" stroke="#ffe9ec" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1.5, 1198.46)" filter="url(#_2)">
+      <text id="_2-2" data-name="2" transform="translate(12 133)" fill="#16146b" stroke="#ffe9ec" stroke-linecap="round" stroke-width="3" font-size="134" font-family="Arial-BoldItalicMT, Arial" font-weight="700" font-style="italic"><tspan x="0" y="0">2</tspan></text>
+    </g>
+  </g>
+</svg>
